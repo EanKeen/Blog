@@ -1,0 +1,3 @@
+# blog
+
+Stub for redirects
