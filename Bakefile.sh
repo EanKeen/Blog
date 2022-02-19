@@ -26,7 +26,7 @@ task.generate() {
 			content="0; url=https://hyperupcall.github.io/blog/$dir"
 		/>
 		<script>
-			window.location.href = 'https://hyperupcall.github.io/blog/posts/$dir'
+			window.location.href = 'https://hyperupcall.github.io/blog/$dir'
 		</script>
 	</head>
 	<body>
