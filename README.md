@@ -1,3 +1,3 @@
 # blog
 
-Stub for redirects
+Redirects links to [hyperupcall/blog](https://github.com/hyperupcall/blog)
