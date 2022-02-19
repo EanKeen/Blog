@@ -2,7 +2,7 @@
 
 task.generate() {
 	local -a pages=(
-		posts
+		./
 		posts/new-blog
 		posts/render-latex-with-katex-in-hugo-blog
 		posts/fibonacci-equation-using-pascals-triangle-part-1
@@ -15,6 +15,8 @@ task.generate() {
 	)
 
 	for dir in "${pages[@]}"; do
+		if [ "$dir" = './' ]; then dir=; fi
+
 		mkdir -p "./$dir"
 		cat > "./$dir/index.html" <<EOF
 <!DOCTYPE html>
