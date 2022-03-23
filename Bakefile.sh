@@ -23,6 +23,10 @@ task.generate() {
 <html>
 	<head>
 		<meta charset="UTF-8" />
+		<link
+			rel="canonical"
+			href="https://hyperupcall.github.io/blog/$dir"
+		/>
 		<meta
 			http-equiv="refresh"
 			content="0; url=https://hyperupcall.github.io/blog/$dir"
