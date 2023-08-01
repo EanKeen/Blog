@@ -1,0 +1,5 @@
+{
+	"devDependencies": {
+		"@hyperupcall/prettier-config": "^0.6.0"
+	}
+}

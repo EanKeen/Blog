@@ -29,22 +29,18 @@ task.generate() {
 		mkdir -p "./$dir"
 		cat > "./$dir/index.html" <<EOF
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link
-			rel="canonical"
-			href="https://hyperupcall.github.io/blog/$dir"
-		/>
-		<meta
-			http-equiv="refresh"
-			content="0; url=https://hyperupcall.github.io/blog/$dir"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="canonical" href="https://hyperupcall.github.io/blog/$dir" />
+		<meta http-equiv="refresh" content="0; url=https://hyperupcall.github.io/blog/$dir" />
 		<script>
 			window.location.href = 'https://hyperupcall.github.io/blog/$dir'
 		</script>
 	</head>
 	<body>
+		<!-- prettier-ignore -->
 		<p>
 			If you are not redirected automatically, click 
 			<a href="https://hyperupcall.github.io/blog/$dir">here</a>
