@@ -12,6 +12,15 @@ task.generate() {
 		posts/fiddling-with-ubuntu-server-images
 		posts/fixing-my-internal-network
 		posts/terminal-automation-with-expect
+		new-blog
+		render-latex-with-katex-in-hugo-blog
+		fibonacci-equation-using-pascals-triangle-part-1
+		fibonacci-equation-using-pascals-triangle-part-2
+		creating-website-for-robotics-club
+		front-end-web-dev-a-years-reflection
+		fiddling-with-ubuntu-server-images
+		fixing-my-internal-network
+		terminal-automation-with-expect
 	)
 
 	for dir in "${pages[@]}"; do
