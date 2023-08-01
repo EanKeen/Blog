@@ -1,8 +1,12 @@
 # shellcheck shell=bash
 
+task.format() {
+	./node_modules/.bin/prettier --write .
+}
+
 task.generate() {
 	local -a pages=(
-		./
+		''
 		posts/new-blog
 		posts/render-latex-with-katex-in-hugo-blog
 		posts/fibonacci-equation-using-pascals-triangle-part-1
@@ -24,7 +28,7 @@ task.generate() {
 	)
 
 	for dir in "${pages[@]}"; do
-		if [ "$dir" = './' ]; then dir=; fi
+		local route=posts/${dir#posts/}
 
 		mkdir -p "./$dir"
 		cat > "./$dir/index.html" <<EOF
@@ -33,21 +37,20 @@ task.generate() {
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="canonical" href="https://hyperupcall.github.io/blog/$dir" />
-		<meta http-equiv="refresh" content="0; url=https://hyperupcall.github.io/blog/$dir" />
+		<link rel="canonical" href="https://hyperupcall.github.io/blog/$route" />
+		<meta http-equiv="refresh" content="0; url=https://hyperupcall.github.io/blog/$route" />
 		<script>
-			window.location.href = 'https://hyperupcall.github.io/blog/$dir'
+			window.location.href = 'https://hyperupcall.github.io/blog/$route'
 		</script>
 	</head>
 	<body>
 		<!-- prettier-ignore -->
 		<p>
 			If you are not redirected automatically, click 
-			<a href="https://hyperupcall.github.io/blog/$dir">here</a>
+			<a href="https://hyperupcall.github.io/blog/$route">here</a>
 		</p>
 	</body>
 </html>
 EOF
 	done
-
 }
