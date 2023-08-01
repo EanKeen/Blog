@@ -1,6 +1,6 @@
 # shellcheck shell=bash
 
-task.format() {
+task.prettier() {
 	./node_modules/.bin/prettier --write .
 }
 
