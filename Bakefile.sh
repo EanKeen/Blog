@@ -32,7 +32,7 @@ task.generate() {
 
 		mkdir -p "./$dir"
 		cat > "./$dir/index.html" <<EOF
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -44,9 +44,8 @@ task.generate() {
 		</script>
 	</head>
 	<body>
-		<!-- prettier-ignore -->
 		<p>
-			If you are not redirected automatically, click 
+			If you are not redirected automatically, click
 			<a href="https://hyperupcall.github.io/blog/$route">here</a>
 		</p>
 	</body>
