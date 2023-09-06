@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^0.6.0
     version: 0.6.0
   prettier:
-    specifier: ^3.0.0
-    version: 3.0.0
+    specifier: ^3.0.3
+    version: 3.0.3
 
 packages:
   /@hyperupcall/prettier-config@0.6.0:
@@ -20,10 +20,10 @@ packages:
       }
     dev: true
 
-  /prettier@3.0.0:
+  /prettier@3.0.3:
     resolution:
       {
-        integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==,
+        integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==,
       }
     engines: { node: '>=14' }
     hasBin: true
