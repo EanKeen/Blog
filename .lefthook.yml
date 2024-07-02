@@ -1,4 +1,4 @@
 pre-commit:
   commands:
-    prettier:
-      run: './bake prettier'
+    format:
+      run: './bake format'

@@ -1,6 +1,6 @@
 # shellcheck shell=bash
 
-task.prettier() {
+task.format() {
 	./node_modules/.bin/prettier --write .
 }
 
@@ -39,6 +39,7 @@ task.generate() {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="canonical" href="https://hyperupcall.github.io/blog/$route" />
 		<meta http-equiv="refresh" content="0; url=https://hyperupcall.github.io/blog/$route" />
+		<title>Redirecting...</title>
 		<script>
 			window.location.href = 'https://hyperupcall.github.io/blog/$route'
 		</script>

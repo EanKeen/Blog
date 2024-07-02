@@ -1,30 +1,32 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  '@hyperupcall/prettier-config':
-    specifier: ^0.6.0
-    version: 0.6.0
-  prettier:
-    specifier: ^3.0.3
-    version: 3.0.3
+importers:
+
+  .:
+    devDependencies:
+      '@hyperupcall/prettier-config':
+        specifier: ^0.7.0
+        version: 0.7.0
+      prettier:
+        specifier: ^3.3.2
+        version: 3.3.2
 
 packages:
-  /@hyperupcall/prettier-config@0.6.0:
-    resolution:
-      {
-        integrity: sha512-nAJ+/9eZ4pnc/zVi3GvIE1hWIUjopr7iCaTQstW4hGeL8XjnUPMGz9Pn97PDqAWyDieQ8TT4PM+IILwaWFtBiQ==,
-      }
-    dev: true
 
-  /prettier@3.0.3:
-    resolution:
-      {
-        integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==,
-      }
-    engines: { node: '>=14' }
+  '@hyperupcall/prettier-config@0.7.0':
+    resolution: {integrity: sha512-k5Ess4PGr1+GdTyJEKOqk2ToUEYvvW076Ini6boRDxq5L9f2fnHAiFjCSo1cQ86LGBZBA7IKI1FubTbGB7fhJw==}
+
+  prettier@3.3.2:
+    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+    engines: {node: '>=14'}
     hasBin: true
-    dev: true
+
+snapshots:
+
+  '@hyperupcall/prettier-config@0.7.0': {}
+
+  prettier@3.3.2: {}
